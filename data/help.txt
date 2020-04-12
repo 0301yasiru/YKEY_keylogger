@@ -24,7 +24,7 @@
 
 
 
-[[white]]FIX MISSCONFIGURATIONs:[[reset]]
+[[white]]Fix misconfiguration:[[reset]]
     1. To fix mysql configuration run the command below
             python3 install.py --configure-mysql
 
@@ -41,7 +41,7 @@
         clear                   : Using this command you can clear the screen
         options/(show options)  : Using this command you can view options in the current work space
     
-    [[uline]]Malware Generation Commands (You can only run there commands wheN usinsg generation option)[[reset]]
+    [[uline]]Malware Generation Commands (You can only run there commands when usinsg generation option)[[reset]]
 
         set         : SYNTAX --> set [option_name] [option_value]
                     : Using this command you can change a setting of Malware
