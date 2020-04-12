@@ -12,7 +12,7 @@ This is a small framework for generate and listen to Keylogger malwares... And a
 4. The run the command below to install the program
  `python3 install.py`
 
-## FIX Miss Configurations
+## FIX misconfigurations
    1. To fix MySQL configuration run the command below
             `python3 install.py --configure-mysql`
     2. To fix virtual environment issues run the command below
