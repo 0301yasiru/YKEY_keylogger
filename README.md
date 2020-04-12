@@ -11,6 +11,11 @@ This is a small framework for generate and listen to Keylogger malwares... And a
 3. Hence this entire program uses only python 3. you must install python 3 before installation.
 4. The run the command below to install the program
  `python3 install.py`
+5. And after that you can run the program without any issues. Run the command below to start the program
+`python3 ykey.py`
+6. You can view the help of the program using this command below
+`python3 install.py --help`
+`python3 ykey.py --help`
 
 ## FIX misconfigurations
    1. To fix MySQL configuration run the command below
