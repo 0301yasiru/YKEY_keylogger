@@ -68,8 +68,8 @@ def install_packages(packages):
         for item in packages:
             print(colors.Cyan + f'[!]Installing {item} .......' + colors.RESET)
             check_output('pip3 install {}'.format(item), shell=True, stderr=devnull)
+            print(colors.Green + f'[+]Successfully installed {item}')
         check_list['Installed missing dependencies'] = True
-        print(colors.Green + f'[+]Successfully installed {item}')
     
     except CalledProcessError:
         check_list['Installed missing dependencies'] = False
