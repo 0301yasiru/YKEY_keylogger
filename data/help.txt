@@ -14,6 +14,7 @@
 [[white]]HOW TO INSTALL:[[reset]]
     1. Installation of this framework is so simple. If you accidentally delete any file please 
        clone the repository from the git hub then continue.
+        cd YKEY_keylogger
 	    git clone https://github.com/0301yasiru/YKEY_keylogger.git
 
     2. Hence this entire program uses only python 3. you must install python 3 before installation.
@@ -21,7 +22,8 @@
     3. The run the command below to install the program
             python3 install.py
 
-
+    4. To update just got to the directory simply run the command below
+            git pull
 
 
 [[white]]Fix misconfiguration:[[reset]]

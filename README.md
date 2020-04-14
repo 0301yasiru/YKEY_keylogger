@@ -8,6 +8,7 @@ This is a small framework for generate and listen to Keylogger malwares... And a
 ## HOW TO INSTALL
 1. Installation of this framework is so simple. If you accidentally delete any file please clone the repository from the git hub then continue.
 	<br>`git clone https://github.com/0301yasiru/YKEY_keylogger.git`
+	<br>`cd YKEY_keylogger`
 2. Hence this entire program uses only python 3. you must install python 3 before installation.
 3. The run the command below to install the program
 	<br>`python3 install.py`
@@ -16,6 +17,8 @@ This is a small framework for generate and listen to Keylogger malwares... And a
 5. You can view the help of the program using this command below
 	<br>`python3 install.py --help`
 	<br>`python3 ykey.py --help`
+6. To update the downloaded program go to the YKEY directory and run the command below.
+	<br>`git pull`
 
 ## FIX misconfigurations
 1. To fix MySQL configuration run the command below
