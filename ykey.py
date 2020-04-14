@@ -409,14 +409,26 @@ def main():
             print(command)
             print(colors.Red + '[-]Invalid command' + colors.RESET)
 
+
+def check_out_arguments():
+    """
+    DOCSTRING: this function will look up to the arguments user gives
+    """
+    argument_dictionary = {
+        '--help': logo_printer.print_help,
+        '--logo': logo_printer.print,
+        '--version': lambda :print('1.0.0.0')
+    }
+    try:
+        argument_dictionary[argv[1]]()
+    except KeyError:
+        print('[-]Invalid Command')
+
+
 if __name__ == '__main__':
 
     try:
-        if argv[1] == '--help':
-            logo_printer.print_help()
-        else:
-            print(colors.Red + '[-]Invalid argument')
-
+        check_out_arguments()
     except IndexError:
         main()
         exit(0)
