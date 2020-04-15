@@ -31,23 +31,6 @@ def execfile_y(file_name, globals_variables):
     exec(compile(open(file_name, "rb").read(), file_name, 'exec'), globals_variables)
 
 
-def read_credential_file(program_path):
-    credentials = {}
-    with open(program_path + '/data/database_credentials.txt', 'r') as credential_file:
-        while True:
-            content_line = credential_file.readline()
-            if not content_line:
-                break
-
-            if content_line[-1] == '\n':
-                content_line = content_line[:-1]
-
-            if len(content_line) > 0:
-                key, content = content_line.split('=')
-                credentials[key] = content
-
-    return credentials
-
 
 # defifnition for main program
 
