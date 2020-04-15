@@ -1,4 +1,5 @@
 # !/usr/bin/python
+# version 1.0.0.0
 
 from libs.colors import COLORS
 from os.path import dirname, realpath
